@@ -1,0 +1,70 @@
+/* 自定义主题颜色 */
+:root {
+  /* 主色调 - 蓝色系 */
+  --el-color-primary: #0064C8;
+  --el-color-primary-light-3: #3B8CFF;
+  --el-color-primary-light-5: #69A9FF;
+  --el-color-primary-light-7: #97C7FF;
+  --el-color-primary-light-9: #E8F3FF;
+  --el-color-primary-dark-2: #004B96;
+  
+  /* 功能色 */
+  --el-color-success: #00B365;
+  --el-color-warning: #FF9A2E;
+  --el-color-danger: #FF4D4F;
+  --el-color-info: #8C8C8C;
+
+  /* 背景色 */
+  --el-bg-color: #F0F2F5;
+  --el-bg-color-page: #F0F2F5;
+  --el-bg-color-overlay: #FFFFFF;
+
+  /* 文字颜色 */
+  --el-text-color-primary: #0A1426;
+  --el-text-color-regular: #2E4057;
+  --el-text-color-secondary: #576B84;
+  --el-text-color-placeholder: #8696AC;
+
+  /* 边框颜色 */
+  --el-border-color: #D9E1EC;
+  --el-border-color-light: #E6EBF2;
+}
+
+/* 侧边栏主题 */
+.aside-theme {
+  --aside-bg-color: #001529;
+  --aside-text-color: rgba(255, 255, 255, 0.85);
+  --aside-active-bg: #0064C8;
+  --aside-hover-bg: rgba(255, 255, 255, 0.08);
+  --aside-menu-hover: rgba(255, 255, 255, 0.03);
+  background-color: var(--aside-bg-color);
+}
+
+/* 自定义组件样式 */
+.el-menu {
+  --el-menu-bg-color: var(--aside-bg-color);
+  --el-menu-text-color: var(--aside-text-color);
+  --el-menu-hover-bg-color: var(--aside-hover-bg);
+  --el-menu-active-color: #FFFFFF;
+  --el-menu-item-height: 50px;
+}
+
+.el-card {
+  --el-card-border-color: transparent;
+  --el-card-border-radius: 8px;
+  --el-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+  --el-box-shadow-light: 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+  background-color: var(--el-bg-color-overlay);
+}
+
+.el-button {
+  --el-button-border-radius: 4px;
+  --el-button-hover-text-color: var(--el-color-primary);
+  --el-button-hover-bg-color: var(--el-color-primary-light-9);
+  --el-button-hover-border-color: var(--el-color-primary);
+}
+
+.el-input {
+  --el-input-border-radius: 4px;
+  --el-input-hover-border-color: var(--el-color-primary);
+} 

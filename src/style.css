@@ -3,3 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* table样式 */
+:deep(.el-table) {
+  --el-table-border-color: #e8e8e8;
+  --el-table-header-bg-color: #fafafa;
+  --el-table-row-hover-bg-color: #fafafa;
+  border: none !important;
+}
+
+:deep(.el-table::before),
+:deep(.el-table__inner-wrapper::before) {
+  display: none;
+}
+
+:deep(.el-table th) {
+  background-color: #fafafa;
+  border-bottom: 1px solid #e8e8e8;
+  font-weight: 500;
+  color: #595959;
+  padding: 12px 0;
+  font-size: 13px;
+}
+
+:deep(.el-table td) {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 12px 0;
+  color: #595959;
+}
+
+:deep(.el-table--enable-row-hover .el-table__body tr:hover > td) {
+  background-color: #fafafa;
+}
+
+:deep(.el-table .el-table__row) {
+  background-color: #fff;
+}
+
+:deep(.el-table .el-table__row:nth-child(even)) {
+  background-color: #fafcff;
+}
